@@ -1,0 +1,178 @@
+/* General */
+body, h1, h2, p, label, input, button, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Form */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  section {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  section:last-child {
+    border-bottom: none;
+  }
+  
+  /* Product */
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0077b6;
+  }
+  
+  div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  div img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  div p {
+    margin: 0;
+  }
+  
+  /* Input */
+  label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+  }
+  
+  /* Radio */
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  label[for="willCall"],
+  label[for="standardShipping"],
+  label[for="expressShipping"] {
+    display: inline-block;
+    margin: 5px 0;
+    font-weight: normal;
+  }
+  
+  /* Totals */
+  #subtotal, #shippingCost, #grandTotal {
+    font-weight: bold;
+    color: #0077b6;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  /* Button */
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005f87;
+  }
+  
+  button[type="reset"] {
+    background-color: #d32f2f;
+  }
+  
+  button[type="reset"]:hover {
+    background-color: #a00000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    div img {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      padding: 15px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

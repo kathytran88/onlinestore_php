@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathy Tran A6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Buy your concert tickets now</h1>
+  </header>
+  <main>
+    <form id="shoppingCartForm" method="POST" action="online.php">
+      <section>
+        <h2>Products</h2>
+        <div>
+          <img src="images/beyonce.webp" alt="Beyonce" width="150">
+          <p>Beyonce Concert</p>
+          <p>$10.00</p>
+          <label for="product1Qty">Quantity:</label>
+          <input type="number" id="product1Qty" name="product1Qty" min="0" value="0">
+        </div>
+        <div>
+          <img src="images/drake.webp" alt="Drake Concert" width="150">
+          <p>Drake Concert</p>
+          <p>$20.00</p>
+          <label for="product2Qty">Quantity:</label>
+          <input type="number" id="product2Qty" name="product2Qty" min="0" value="0">
+        </div>
+      </section>
+
+      <section>
+        <h2>Customer Information</h2>
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" name="customerName">
+
+        <label for="customerAddress">Address:</label>
+        <input type="text" id="customerAddress" name="customerAddress">
+
+        <label for="customerZip">ZIP code:</label>
+        <input type="text" id="customerZip" name="customerZip" maxlength="5">
+
+        <label for="customerPhone">Phone:</label>
+        <input type="text" id="customerPhone" name="customerPhone">
+
+        <label for="customerEmail">Email:</label>
+        <input type="email" id="customerEmail" name="customerEmail">
+      </section>
+
+      <section>
+        <h2>Shipping</h2>
+        <input type="radio" id="willCall" name="shippingMethod" value="0" checked>
+
+        <label for="willCall">Will-Call (Free)</label>
+        <input type="radio" id="standardShipping" name="shippingMethod" value="5">
+
+        <label for="standardShipping">Standard Shipping ($5.00)</label>
+        <input type="radio" id="expressShipping" name="shippingMethod" value="10">
+
+        <label for="expressShipping">Express Shipping ($10.00)</label>
+      </section>
+
+      <section>
+        <h2>Totals</h2>
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Shipping: $<span id="shippingCost">0.00</span></p>
+        <p>Grand Total: $<span id="grandTotal">0.00</span></p>
+      </section>
+
+      <section>
+        <button type="submit">Checkout</button>
+        <button type="reset">Reset</button>
+      </section>
+
+    </form>
+  </main>
+
+  <script src="store.js"></script>
+</body>
+</html>
